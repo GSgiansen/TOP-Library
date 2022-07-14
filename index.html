@@ -12,9 +12,26 @@
     <header>Welcome to the Magic Library!</header>
     <div class="container">
         <div class="sidebar">
-            <button id="addbook">
-                Add a new book!
-            </button>
+            <button id="openform">Add Book ?</button>
+            <div class="form-popup" id="addbook">
+                <form id="form-container">
+                    <label for="author">Author Name:</label>
+                    <input type="text" id="author">
+                    <br>
+                    <label for="titles">Title of Book:</label>
+                    <input type="text" id="titles">
+                    <br>
+                    <label for="pages">Num of pages:</label>
+                    <input type="text" id="pages">
+                    <br>
+                    <label for="readbefore">Read Before:</label>
+                    <input type="text" id="readbefore">
+                    <br>
+                    <button type="button" id="submitbutton">Submit</button>
+                    <br>
+                  <button type="button" id="closeform">Close</button>
+                </form>
+              </div>
         </div>
         <div id="catalogue"></div>
         </div>

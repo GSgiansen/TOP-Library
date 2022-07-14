@@ -20,16 +20,17 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 10vw 90vw;
+    grid-template-columns: calc(15vw + 5px) calc(85vw - 5px);
 }
 
 .sidebar{
-    background-color: rgb(95, 25, 25);
+    background-color: rgba(222, 184, 135, 0.593);
     height: calc(90vh - 20px);
-    width: 10vw;
+    width: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 5px;
 }
 #catalogue{
     padding-top: 25px;
@@ -42,11 +43,18 @@ body{
 
 }
 .book{
-    height: 20vh;
+    height: 25vh;
     width:20vw;
     background-color: white;
     border-radius: 8px;
     display: grid;
-    padding-left: 16px;
+    border-left-style: solid;
+    border-left-width: 16px;
+    border-left-color: brown;
+
     
+}
+
+#addbook{
+    display: none;
 }
